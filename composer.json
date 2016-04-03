@@ -1,0 +1,30 @@
+{
+  "name": "lfbn/wp-post-enricher",
+  "type": "wordpress-plugin",
+  "description": "Official WP Post Enricher plugin for WordPress",
+  "license": "MIT",
+  "keywords": ["wordpress","plugin"],
+  "require": {
+    "php": ">=5.4.0"
+  },
+  "authors": [
+    {
+      "name": "Luís Nóbrega",
+      "email": "luis.barros.nobrega@gmail.com",
+      "homepage": "https://github.com/lfbn"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "PostEnricher\\": "src/PostEnricher/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PostEnricher\\Tests\\": "tests/phpunit/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^4.8"
+  }
+}
